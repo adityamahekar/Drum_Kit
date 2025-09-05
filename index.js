@@ -52,13 +52,18 @@ function makeSound(key){
                     break;
         
             default:
-                console.long(buttonInnerHTML);
+                // console.log(buttonInnerHTML);
+                console.log(key);
                 break;
         }
     }
 
+
+
+
  function buttonAnime(currentKey){
         var activeButton =document.querySelector("."+currentKey);
+      if (activeButton) {
         activeButton.classList.add("pressed");
 
 
@@ -66,4 +71,5 @@ function makeSound(key){
             activeButton.classList.remove("pressed");
         },100);
     }
-    
+ }   
+
